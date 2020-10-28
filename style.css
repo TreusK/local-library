@@ -1,0 +1,170 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+p, h4 {
+	margin: 0;
+}
+
+#everything {
+	display: flex;
+}
+
+#header {
+	text-align: center;
+}
+
+aside {
+	flex-shrink: 1;
+	flex-basis: 350px;
+	min-width: 350px;
+	background: grey;
+}
+
+main {
+	flex-shrink: 0;
+	flex-grow: 2;
+	background: #F0F3F4;
+}
+
+
+/* Cards Styles */
+
+#cardsContainer, .top {
+	width: 99%;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.cardStyle {
+	display: flex;
+	justify-content: space-between;
+	border: solid 2px black;
+	border-top: none;
+	height: 45px;
+}
+
+.cardTitle {
+	flex-basis: 300px;
+	padding: 7px 0 0 7px;
+	font-size: 90%;
+	background: Gainsboro;
+}
+
+.top {
+	border-right: none;
+	border-left: none;
+	height: 30px;
+	background: grey;
+}
+
+#topTitle {
+	background: grey;
+}
+
+.cardAuthor, .cardGenre, .cardPages, .cardStatus, .cardStatusTop {
+	text-align: center;
+	flex-basis: 100px;
+	margin-top: 7px;
+	height: 20px;
+}
+
+.cardStatus {
+	font-size: 70%;
+	font-weight: 800;
+}
+
+.cardDelete, .cardDeleteTop {
+	text-align: center;
+	height: 24px;
+	width: 24px;
+}
+
+.cardDelete:hover, .cardStatus:hover {
+	cursor: pointer;
+}
+
+
+/* Aside Styles */
+
+#addNewBook {
+	display: flex;
+	justify-content: center;
+}
+
+#addNewBook h1:hover {
+	cursor: pointer;
+}
+
+#addNewBook h1{
+	padding: 20px 30px;
+	border-radius: 5px;
+	background: #B0C4DE;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#formContainer {
+	border-radius: 5px;
+	width: 80%;
+	margin: 0 auto;
+	background: #F0F3F4;
+	padding: 50px 10px 10px 30px;
+}
+
+#formContainer div {
+	margin-bottom: 30px;
+}
+
+input[type=text] {
+	display: block;
+	height: 25px;
+	width: 80%;
+	background: #F0F3F4;
+	border-radius: 5px;
+}
+
+#add {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px black;
+	border-radius: 5px;
+	width: 70px;
+	height: 30px;
+	margin-bottom: 10px !important;
+}
+
+#add:hover {
+	cursor: pointer;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

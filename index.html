@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Library</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="everything">
+		<aside>
+			<div id="addNewBook" class="noSelect"><h1>Add New Book</h1></div>
+			
+			<div id="formContainer" class="hidden">
+				<div>
+					<label for="title">Title</label>
+					<input type="text" id="title" maxLength="40">
+				</div>
+				
+				<div>
+					<label for="author">Author</label>
+					<input type="text" id="author"  maxLength="15">
+				</div>
+				
+				<div>
+					<label for="genre">Genre</label>
+					<input type="text" id="genre"  maxLength="15">
+				</div>
+				
+				<div>
+					<label for="">Pages</label>
+					<input type="text" id="pages" maxLength="5">
+				</div>
+				
+				<div>
+					<p>Status</p>
+					<div>
+						<input type="radio" id="notRead" name="status" value="notRead" checked>
+						<label for="read">Not read</label>
+						
+						<input type="radio" id="reading" name="status" value="reading">
+						<label for="read">Reading</label>
+						
+						<input type="radio" id="read" name="status" value="read">
+						<label for="read">Read</label>
+					</div>
+				</div>
+				
+				<div id="add"><p>Add</p></div>
+			</div>
+		</aside>
+
+		<main>
+			<div id="header">
+				<h1>Library</h1>
+			</div>
+			
+			<div class="cardStyle top">
+					<p class="cardTitle" id="topTitle">Title</p>
+					<p class="cardAuthor">Author</p>
+					<p class="cardGenre">Genre</p>
+					<p class="cardPages">Pages</p>
+					<p class="cardStatusTop">Status</p>
+					<p class="cardDeleteTop"></p>
+			</div>
+			<div id="cardsContainer">
+				
+			</div>
+		</main>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
