@@ -62,10 +62,13 @@ function createCard(obj, position) {
 	readCard.classList.add('cardStatus');
 	if (obj.read == 'notRead') {
 		readCard.innerHTML = 'NOT READ';
+		readCard.classList.add('notReadP');
 	} else if (obj.read == 'reading') {
 		readCard.innerHTML = 'READING';
+		readCard.classList.add('readingP');
 	} else if (obj.read == 'read') {
 		readCard.innerHTML = 'READ';
+		readCard.classList.add('readP');
 	};
 	readCard.setAttribute('data-status', position);
 	readCard.addEventListener('click', changeStatus);
