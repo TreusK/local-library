@@ -55,6 +55,7 @@ main {
 }
 
 .top {
+	color: white;
 	border-right: none;
 	border-left: none;
 	height: 30px;
